@@ -1,0 +1,358 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.homeSection {
+  height: 100vh;
+  background-color: #ff856e;
+  border-bottom-left-radius: 10rem;
+}
+
+.main {
+  height: 100%;
+  background: url(./images/bg-pattern-intro.svg);
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: 38%;
+  background-size: 330%;
+  border-bottom-left-radius: 10rem;
+}
+
+.navbar-brand {
+  font-size: 4rem;
+  font-weight: bold;
+  color: white !important;
+}
+
+.navbar {
+  border: 1px solid;
+}
+
+.navbar > .container-fluid {
+  margin: 0 2.5rem;
+}
+
+.burgerIcon {
+  background: url("./images/menu.svg");
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.closeIcon {
+  background: url("./images/close.svg");
+  width: 2.08rem;
+  height: 2.08rem;
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.navUl {
+  background-color: white;
+  text-align: center;
+  width: 80%;
+  position: fixed;
+  top: 15%;
+  right: -80%;
+  -webkit-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
+  border-radius: 1.6rem;
+  padding: 1.6rem;
+}
+
+.navUl li a {
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: black;
+}
+
+.navUl .btn {
+  font-size: 2.5rem;
+  font-weight: bold;
+  width: 65%;
+  padding: 1.5rem;
+  margin: auto;
+  color: #ff555d;
+  border-radius: 5rem;
+}
+
+.open {
+  right: calc((100% - 80%) / 2);
+}
+
+li {
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.productList,
+.companyList,
+.connectList {
+  display: none;
+  background-color: #efefef;
+  padding: 1rem;
+  border-radius: 1.6rem;
+}
+
+.productList li a:hover,
+.companyList li a:hover,
+.connectList li a:hover {
+  color: #ff555d;
+}
+
+.displayDropdown {
+  display: block;
+}
+
+.arrow1,
+.arrow2,
+.arrow3 {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.cngColor {
+  color: #868383 !important;
+}
+
+.signUp {
+  border: 1px solid;
+  margin-top: 2rem !important;
+}
+
+.signUp:hover,
+.strtFreeBtn:hover {
+  color: white !important;
+  background-color: #ff555d !important;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  max-width: 90%;
+  height: 82%;
+}
+
+.homeContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  height: 80%;
+  border: 2px solid yellow;
+  color: white;
+}
+
+.context h1 {
+  font-size: calc(2.3rem + 2vh);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.context .para {
+  font-size: 2.3rem;
+  width: 75%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.btns .btn {
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 600;
+  border: 1px solid;
+  border-radius: 5rem;
+  margin: 1rem 1rem 2rem 1rem;
+  padding: 1rem 1.3rem;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.btns .strtFreeBtn {
+  color: #ff555d;
+  background-color: white;
+}
+
+@media (min-width: 576px) {
+  .homeSection,
+  .main {
+    border-bottom-left-radius: 15rem;
+  }
+  .navbar-brand {
+    font-size: 5rem;
+  }
+  .burgerIcon {
+    background: url("./images/menu.svg");
+    width: 3.5rem;
+    height: 3.5rem;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+  }
+  .closeIcon {
+    background: url("./images/close.svg");
+    width: 3rem;
+    height: 3rem;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+  }
+  .navUl {
+    width: 60%;
+    top: 18%;
+    border-radius: 2rem;
+    padding: 2.5rem;
+  }
+  .navUl li a,
+  .navUl .btn {
+    font-size: 3rem;
+  }
+  .navUl .btn {
+    height: 7rem;
+  }
+  .open {
+    right: calc((100% - 60%) / 2);
+  }
+  .context h1 {
+    font-size: calc(2.3rem + 4.5vh);
+  }
+  .context .para {
+    font-size: 3rem;
+  }
+  .btns {
+    width: 100%;
+  }
+  .btns .btn {
+    width: 37%;
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .homeSection,
+  .main {
+    border-bottom-left-radius: 19rem;
+  }
+  .navbar-brand {
+    font-size: 7rem;
+  }
+  .container {
+    height: 80%;
+  }
+  .burgerIcon {
+    background: url("./images/menu.svg");
+    width: 4.5rem;
+    height: 4.5rem;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+  }
+  .closeIcon {
+    background: url("./images/close.svg");
+    width: 4rem;
+    height: 4rem;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+  }
+  .navUl {
+    width: 50%;
+    top: 20%;
+    border-radius: 3rem;
+    padding: 2.5rem;
+  }
+  .navUl li a,
+  .navUl .btn {
+    font-size: 4rem;
+  }
+  .navUl .btn {
+    height: 9rem;
+  }
+  .open {
+    right: calc((100% - 50%) / 2);
+  }
+  .context h1 {
+    font-size: calc(2.3rem + 7vh);
+  }
+  .context .para {
+    font-size: 4rem;
+  }
+  .btns .btn {
+    font-size: 3.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
