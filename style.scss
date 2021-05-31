@@ -49,6 +49,7 @@ html {
   height: 100vh;
   background-color: $color1;
   border-bottom-left-radius: 10rem;
+  margin-bottom: 5rem;
 }
 
 .main {
@@ -67,10 +68,6 @@ html {
   color: white !important;
 }
 
-.navbar {
-  border: 1px solid;
-}
-
 .navbar > .container-fluid {
   margin: 0 2.5rem;
 }
@@ -85,16 +82,22 @@ html {
 
 .navUl {
   background-color: white;
-  text-align: center;
   width: $navUlWidth;
-  position: fixed;
-  top: 15%;
+  text-align: center;
+  position: absolute;
+  top: 20vh;
   right: -$navUlWidth;
   transition: 0.7s ease-in-out;
   border-radius: 1.6rem;
   padding: 1.6rem;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 2px 17px 2px rgba(0, 0, 0, 0.48);
 
-  li a {
+  li {
+    width: 100%;
+  }
+  a {
     font-weight: 600;
     font-size: 2.5rem;
     color: black;
@@ -106,8 +109,14 @@ html {
     width: 65%;
     padding: 1.5rem;
     margin: auto;
+    margin-bottom: 9px;
     color: $color2;
     border-radius: 5rem;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 }
 
@@ -116,8 +125,15 @@ html {
 }
 
 li {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   cursor: pointer;
+}
+
+.arrow::after {
+  content: url(./images/icon-arrow-dark.svg);
+  display: inline-block;
+  margin-left: 5px;
+  transition: 0.2s ease-in-out;
 }
 
 .productList,
@@ -125,7 +141,7 @@ li {
 .connectList {
   display: none;
   background-color: #efefef;
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 1.6rem;
 
   li a:hover {
@@ -137,13 +153,7 @@ li {
   display: block;
 }
 
-.arrow1,
-.arrow2,
-.arrow3 {
-  transition: 0.2s ease-in-out;
-}
-
-.rotate {
+.rotate::after {
   transform: rotate(180deg);
 }
 
@@ -153,7 +163,7 @@ li {
 
 .signUp {
   border: 1px solid;
-  margin-top: 2rem !important;
+  margin-top: 2rem;
 }
 
 .signUp:hover,
@@ -163,14 +173,12 @@ li {
 
 .container {
   @include flexProperties(row);
-  max-width: 90%;
-  height: 82%;
+  height: 85%;
 }
 
 .homeContainer {
   @include flexProperties(column);
   height: 80%;
-  border: 2px solid yellow;
   color: white;
 }
 
@@ -208,6 +216,47 @@ li {
   }
 }
 
+// section 2
+
+.section_2 {
+  h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+
+  para {
+    font-size: 1.1rem;
+  }
+
+  .sec_2_container {
+    align-items: start;
+
+    .row {
+      justify-content: center;
+    }
+  }
+}
+
+.sec_2_img {
+  width: 80vw;
+  height: 45vh;
+  background-image: url("./images/illustration-editor-mobile.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-bottom: 2rem;
+}
+
+.sec_2_para {
+  @include flexProperties(column);
+}
+
+.para1,
+.para2 {
+  width: 70vw;
+  margin-bottom: 2rem;
+}
+
 // media queries
 
 @media (min-width: 576px) {
@@ -232,7 +281,6 @@ li {
 
   .navUl {
     width: $navUlWidth;
-    top: 18%;
     border-radius: 2rem;
     padding: 2.5rem;
 
@@ -292,7 +340,6 @@ li {
 
   .navUl {
     width: $navUlWidth;
-    top: 10%;
     border-radius: 3rem;
     padding: 2.5rem;
 
@@ -323,5 +370,66 @@ li {
     .btn {
       font-size: 3.5rem;
     }
+  }
+}
+
+@media (min-width: 992px) {
+  .navUl {
+    width: 79%;
+    right: 0;
+    top: 18px;
+    background-color: transparent;
+    box-shadow: none;
+    li {
+      width: 35%;
+      a {
+        font-size: 2rem;
+      }
+    }
+
+    .btn {
+      height: 6rem;
+      font-size: 2rem;
+    }
+    div {
+      flex-direction: row;
+      width: 50%;
+    }
+  }
+
+  li {
+    margin-bottom: 0;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .arrow::after {
+    content: url(./images/icon-arrow-light.svg);
+  }
+
+  .nav-item {
+    ul {
+      position: absolute;
+      top: 80px;
+    }
+  }
+
+  .cngColor {
+    color: white !important;
+  }
+
+  .logIn {
+    color: white !important;
+  }
+
+  .logIn:hover {
+    color: #eae7e7 !important;
+  }
+
+  .signUp {
+    background-color: white;
+    border-color: white;
   }
 }

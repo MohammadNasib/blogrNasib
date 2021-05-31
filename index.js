@@ -6,34 +6,20 @@ let connect = document.querySelector(".connect");
 let productList = document.querySelector(".productList");
 let companyList = document.querySelector(".companyList");
 let connectList = document.querySelector(".connectList");
-let arrow1 = document.querySelector(".arrow1");
-let arrow2 = document.querySelector(".arrow2");
-let arrow3 = document.querySelector(".arrow3");
+let arrow = document.getElementsByClassName("arrow");
 
 function closeIcon() {
   navUl.classList.toggle("open");
   icon.classList.toggle("closeIcon");
 }
 
-function showProducts() {
-  product.classList.toggle("cngColor");
-  productList.classList.toggle("displayDropdown");
-  arrow1.classList.toggle("rotate");
-}
-
-function showCompany() {
-  company.classList.toggle("cngColor");
-  companyList.classList.toggle("displayDropdown");
-  arrow2.classList.toggle("rotate");
-}
-
-function showConnect() {
-  connect.classList.toggle("cngColor");
-  connectList.classList.toggle("displayDropdown");
-  arrow3.classList.toggle("rotate");
+function showFunc(name, nameList) {
+  name.classList.toggle("cngColor");
+  name.classList.toggle("rotate");
+  nameList.classList.toggle("displayDropdown");
 }
 
 icon.addEventListener("click", closeIcon);
-product.addEventListener("click", showProducts);
-company.addEventListener("click", showCompany);
-connect.addEventListener("click", showConnect);
+product.addEventListener("click", () => showFunc(product, productList));
+company.addEventListener("click", () => showFunc(company, companyList));
+connect.addEventListener("click", () => showFunc(connect, connectList));
