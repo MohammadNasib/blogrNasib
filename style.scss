@@ -285,7 +285,7 @@ li {
 .sec_3_para {
   @include bgProperty("bg-pattern-circles.svg", 100%, 100vh);
   @include flexProperties(column);
-  height: auto;
+  // height: auto;
   background-position-y: -45vh;
   color: white;
   background-color: #2c2d3f;

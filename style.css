@@ -333,7 +333,6 @@ li {
   -webkit-box-direction: normal !important;
       -ms-flex-direction: column !important;
           flex-direction: column !important;
-  height: auto;
   background-position-y: -45vh;
   color: white;
   background-color: #2c2d3f;
