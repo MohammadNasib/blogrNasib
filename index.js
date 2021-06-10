@@ -1,4 +1,5 @@
 let icon = document.querySelector(".icon");
+let navBtn = document.querySelector(".navBtn");
 let navUl = document.querySelector(".navUl");
 let product = document.querySelector(".product");
 let company = document.querySelector(".company");
@@ -19,7 +20,7 @@ function showFunc(name, nameList) {
   nameList.classList.toggle("displayDropdown");
 }
 
-icon.addEventListener("click", closeIcon);
+navBtn.addEventListener("click", closeIcon);
 product.addEventListener("click", () => showFunc(product, productList));
 company.addEventListener("click", () => showFunc(company, companyList));
 connect.addEventListener("click", () => showFunc(connect, connectList));
