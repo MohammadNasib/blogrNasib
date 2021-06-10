@@ -15,12 +15,6 @@ li {
   cursor: pointer;
 }
 
-.heading {
-  font-size: calc(2.3rem + 2vh);
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,23 +33,21 @@ li {
   height: 85%;
 }
 
-.sec_container {
-  -webkit-box-orient: vertical !important;
-  -webkit-box-direction: normal !important;
-      -ms-flex-direction: column !important;
-          flex-direction: column !important;
-}
-
 .heading_1 {
-  font-size: 3.3rem;
+  font-size: 3.5rem;
   font-weight: bold;
   margin-bottom: 2rem;
 }
 
 .heading_2 {
-  font-size: 2.7rem;
+  font-size: 3rem;
   font-weight: bold;
   margin-bottom: 2rem;
+}
+
+.para {
+  width: 73vw;
+  margin-bottom: 3rem;
 }
 
 .homeSection {
@@ -238,7 +230,7 @@ li {
   color: white;
 }
 
-.context .para {
+.context p {
   font-size: 2.3rem;
   width: 75%;
   margin: auto;
@@ -262,9 +254,9 @@ li {
   background-color: white;
 }
 
-.section_2 para,
-.section_3 para {
-  font-size: 1.4rem;
+.section_2 p,
+.section_3 p {
+  font-size: 1.6rem;
 }
 
 .section_2 .row,
@@ -277,7 +269,7 @@ li {
 .sec_2_img {
   width: 45vh;
   height: 45vh;
-  background: url("./images/illustration-editor-mobile.svg") center/100% no-repeat;
+  background: url("./images/illustration-editor-mobile.svg") center/45vh no-repeat;
 }
 
 .sec_2_para {
@@ -297,10 +289,60 @@ li {
           flex-direction: column !important;
 }
 
-.para1,
-.para2 {
-  width: 70vw;
-  margin-bottom: 3rem;
+.sec_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  position: relative;
+}
+
+.sec_3_img {
+  width: 45vh;
+}
+
+.sec_3_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.sec_3_para {
+  width: 100%;
+  height: 100vh;
+  background: url("./images/bg-pattern-circles.svg") center/100vh no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  height: auto;
+  background-position-y: -45vh;
+  color: white;
+  background-color: #2c2d3f;
+  border-top-right-radius: 9rem;
+  border-bottom-left-radius: 9rem;
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+  padding-top: 17rem;
 }
 
 @media (min-width: 576px) {
@@ -357,7 +399,7 @@ li {
   .context h1 {
     font-size: calc(2.3rem + 4.5vh);
   }
-  .context .para {
+  .context p {
     font-size: 3rem;
   }
   .btns {
@@ -426,7 +468,7 @@ li {
   .context h1 {
     font-size: calc(2.3rem + 7vh);
   }
-  .context .para {
+  .context p {
     font-size: 4rem;
   }
   .btns .btn {
