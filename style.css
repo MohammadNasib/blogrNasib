@@ -50,7 +50,7 @@ li {
 }
 
 .navbar-brand {
-  font-size: 4rem;
+  font-size: 13vw;
   font-weight: bold;
   color: white !important;
 }
@@ -61,8 +61,8 @@ li {
 
 .burgerIcon {
   background: url("./images/menu.svg");
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 13vw;
+  height: 7vh;
   display: inline-block;
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -76,8 +76,8 @@ li {
 
 .closeIcon {
   background: url("./images/close.svg");
-  width: 2.08rem;
-  height: 2.08rem;
+  width: 9vw;
+  height: 7vh;
   display: inline-block;
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -123,8 +123,7 @@ li {
 .navUl .btn {
   font-size: 2.5rem;
   font-weight: bold;
-  width: 65%;
-  padding: 1.5rem;
+  padding: 1rem 3rem;
   margin: auto;
   margin-bottom: 9px;
   color: #ff555d;
@@ -139,7 +138,6 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
 }
 
 .open {
@@ -213,22 +211,21 @@ li {
 }
 
 .context p {
-  font-size: 2.3rem;
+  font-size: 5.5vw;
   width: 75%;
   margin: auto;
   margin-bottom: 2rem;
 }
 
 .btns .btn {
-  font-size: 1.8rem;
+  font-size: 5vw;
   color: white;
   font-weight: 600;
   border: 1px solid;
   border-radius: 5rem;
   margin: 1rem 1rem 2rem 1rem;
-  padding: 1rem 1.3rem;
+  padding: 1rem 2rem;
   cursor: pointer;
-  vertical-align: middle;
 }
 
 .btns .strtFreeBtn {
@@ -239,7 +236,7 @@ li {
 .section_2 p,
 .section_3 p,
 .section_4 p {
-  font-size: 4.3vw;
+  font-size: 5vw;
 }
 
 .section_2 .row,
@@ -334,11 +331,7 @@ li {
   background-color: #25252d;
   border-top-right-radius: 9rem;
   padding-top: 5rem;
-}
-
-.footer .row {
-  color: #c8c8cb;
-  font-size: 6vw;
+  text-align: center;
 }
 
 .footer h1,
@@ -361,6 +354,7 @@ li {
 }
 
 .footer a {
+  font-size: 6vw;
   text-decoration: none;
   color: #c8c8cb;
 }
@@ -371,12 +365,12 @@ li {
     border-bottom-left-radius: 15rem;
   }
   .navbar-brand {
-    font-size: 5rem;
+    font-size: 10vw;
   }
   .burgerIcon {
     background: url("./images/menu.svg");
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 9vw;
+    height: 7vh;
     display: inline-block;
     vertical-align: middle;
     background-repeat: no-repeat;
@@ -389,8 +383,8 @@ li {
   }
   .closeIcon {
     background: url("./images/close.svg");
-    width: 3rem;
-    height: 3rem;
+    width: 7vw;
+    height: 7vh;
     display: inline-block;
     vertical-align: middle;
     background-repeat: no-repeat;
@@ -400,6 +394,9 @@ li {
     transition: 0.2s ease;
     -webkit-transition-delay: 0.3s;
             transition-delay: 0.3s;
+  }
+  .btns .btn {
+    padding: 2rem 3rem;
   }
   .navUl {
     width: 60%;
@@ -408,53 +405,46 @@ li {
   }
   .navUl li a,
   .navUl .btn {
-    font-size: 3rem;
+    font-size: 6vw;
   }
   .navUl .btn {
-    height: 7rem;
+    padding: 2rem 5rem;
   }
   .open {
     right: calc((100% - 60%) / 2);
   }
-  .context h1 {
-    font-size: calc(2.3rem + 4.5vh);
-  }
-  .context p {
-    font-size: 3rem;
-  }
-  .btns {
-    width: 100%;
-  }
-  .btns .btn {
-    width: 37%;
-    font-size: 2.5rem;
-  }
   .sec_container {
-    background-size: 70vh;
+    background-size: 65vh;
   }
   .sec_3_para {
     background-size: 135vh;
     height: 100%;
-    padding-top: 40vh;
-    margin-top: 40vh;
+    padding-top: 35vh;
+    margin-top: 35vh;
   }
 }
 
 @media (min-width: 768px) {
+  .heading_1 {
+    font-size: 9.5vw;
+  }
+  .heading_2 {
+    font-size: 9vw;
+  }
   .homeSection,
   .main {
     border-bottom-left-radius: 19rem;
   }
   .navbar-brand {
-    font-size: 7rem;
+    font-size: 11vw;
   }
   .container {
     height: 80%;
   }
   .burgerIcon {
     background: url("./images/menu.svg");
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 11vw;
+    height: 9vh;
     display: inline-block;
     vertical-align: middle;
     background-repeat: no-repeat;
@@ -467,8 +457,8 @@ li {
   }
   .closeIcon {
     background: url("./images/close.svg");
-    width: 4rem;
-    height: 4rem;
+    width: 8vw;
+    height: 7vh;
     display: inline-block;
     vertical-align: middle;
     background-repeat: no-repeat;
@@ -486,31 +476,28 @@ li {
   }
   .navUl li a,
   .navUl .btn {
-    font-size: 4rem;
-  }
-  .navUl .btn {
-    height: 9rem;
+    font-size: 6.5vw;
   }
   .open {
     right: calc((100% - 50%) / 2);
   }
-  .context h1 {
-    font-size: calc(2.3rem + 7vh);
-  }
   .context p {
-    font-size: 4rem;
+    font-size: 6.5vw;
   }
-  .btns .btn {
-    font-size: 3.5rem;
+  .para {
+    margin-bottom: 5rem;
   }
 }
 
 @media (min-width: 992px) {
+  .navbar-brand {
+    font-size: 7vw;
+  }
   .navUl {
-    width: 79%;
+    width: 80%;
     position: absolute;
     right: 0;
-    top: 18px;
+    top: 8px;
     background-color: transparent;
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -519,11 +506,11 @@ li {
     width: 35%;
   }
   .navUl li a {
-    font-size: 2rem;
+    font-size: 3vw;
   }
   .navUl .btn {
-    height: 6rem;
-    font-size: 2rem;
+    height: 7vw;
+    font-size: 2.5vw;
   }
   .navUl div {
     -webkit-box-orient: horizontal;
@@ -557,6 +544,15 @@ li {
   .signUp {
     background-color: white;
     border-color: white;
+  }
+  .footer h1 {
+    font-size: 8vw;
+  }
+  .footer h2 {
+    font-size: 5vw;
+  }
+  .footer a {
+    font-size: 3vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

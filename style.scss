@@ -8,10 +8,10 @@ $font: "Overpass", sans-serif;
 
 // ##################### mixins #########################
 
-@mixin iconProperties($iconName, $widthAndHeight) {
+@mixin iconProperties($iconName, $width, $height) {
   background: url($iconName);
-  width: $widthAndHeight;
-  height: $widthAndHeight;
+  width: $width;
+  height: $height;
   display: inline-block;
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -99,7 +99,7 @@ li {
 }
 
 .navbar-brand {
-  font-size: 4rem;
+  font-size: 13vw;
   font-weight: bold;
   color: white !important;
 }
@@ -109,11 +109,11 @@ li {
 }
 
 .burgerIcon {
-  @include iconProperties("./images/menu.svg", 2.5rem);
+  @include iconProperties("./images/menu.svg", 13vw, 7vh);
 }
 
 .closeIcon {
-  @include iconProperties("./images/close.svg", 2.08rem);
+  @include iconProperties("./images/close.svg", 9vw, 7vh);
 }
 
 .navUl {
@@ -142,8 +142,7 @@ li {
   .btn {
     font-size: 2.5rem;
     font-weight: bold;
-    width: 65%;
-    padding: 1.5rem;
+    padding: 1rem 3rem;
     margin: auto;
     margin-bottom: 9px;
     color: $color2;
@@ -153,7 +152,6 @@ li {
   div {
     display: flex;
     flex-direction: column;
-    width: 100%;
   }
 }
 
@@ -211,7 +209,7 @@ li {
 
 .context {
   p {
-    font-size: 2.3rem;
+    font-size: 5.5vw;
     width: 75%;
     margin: auto;
     margin-bottom: 2rem;
@@ -220,15 +218,14 @@ li {
 
 .btns {
   .btn {
-    font-size: 1.8rem;
+    font-size: 5vw;
     color: white;
     font-weight: 600;
     border: 1px solid;
     border-radius: 5rem;
     margin: 1rem 1rem 2rem 1rem;
-    padding: 1rem 1.3rem;
+    padding: 1rem 2rem;
     cursor: pointer;
-    vertical-align: middle;
   }
 
   .strtFreeBtn {
@@ -243,7 +240,7 @@ li {
 .section_3,
 .section_4 {
   p {
-    font-size: 4.3vw;
+    font-size: 5vw;
   }
 
   .row {
@@ -296,11 +293,7 @@ li {
   background-color: hsl(240, 10%, 16%);
   border-top-right-radius: 9rem;
   padding-top: 5rem;
-
-  .row {
-    color: hsl(240, 2%, 79%);
-    font-size: 6vw;
-  }
+  text-align: center;
 
   h1,
   h2 {
@@ -322,6 +315,7 @@ li {
   }
 
   a {
+    font-size: 6vw;
     text-decoration: none;
     color: hsl(240, 2%, 79%);
   }
@@ -340,15 +334,19 @@ li {
   }
 
   .navbar-brand {
-    font-size: 5rem;
+    font-size: 10vw;
   }
 
   .burgerIcon {
-    @include iconProperties("./images/menu.svg", 3.5rem);
+    @include iconProperties("./images/menu.svg", 9vw, 7vh);
   }
 
   .closeIcon {
-    @include iconProperties("./images/close.svg", 3rem);
+    @include iconProperties("./images/close.svg", 7vw, 7vh);
+  }
+
+  .btns .btn {
+    padding: 2rem 3rem;
   }
 
   .navUl {
@@ -358,10 +356,10 @@ li {
 
     li a,
     .btn {
-      font-size: 3rem;
+      font-size: 6vw;
     }
     .btn {
-      height: 7rem;
+      padding: 2rem 5rem;
     }
   }
 
@@ -369,46 +367,38 @@ li {
     right: calc((100% - #{$navUlWidth}) / 2);
   }
 
-  .context {
-    h1 {
-      font-size: calc(2.3rem + 4.5vh);
-    }
-    p {
-      font-size: 3rem;
-    }
-  }
-
-  .btns {
-    width: 100%;
-    .btn {
-      width: 37%;
-      font-size: 2.5rem;
-    }
-  }
-
   // ################# section 3 ###########
 
   .sec_container {
-    background-size: 70vh;
+    background-size: 65vh;
   }
 
   .sec_3_para {
     background-size: 135vh;
     height: 100%;
-    padding-top: 40vh;
-    margin-top: 40vh;
+    padding-top: 35vh;
+    margin-top: 35vh;
   }
 }
 
 @media (min-width: 768px) {
   $navUlWidth: 50%;
+
+  .heading_1 {
+    font-size: 9.5vw;
+  }
+
+  .heading_2 {
+    font-size: 9vw;
+  }
+
   .homeSection,
   .main {
     border-bottom-left-radius: 19rem;
   }
 
   .navbar-brand {
-    font-size: 7rem;
+    font-size: 11vw;
   }
 
   .container {
@@ -416,11 +406,11 @@ li {
   }
 
   .burgerIcon {
-    @include iconProperties("./images/menu.svg", 4.5rem);
+    @include iconProperties("./images/menu.svg", 11vw, 9vh);
   }
 
   .closeIcon {
-    @include iconProperties("./images/close.svg", 4rem);
+    @include iconProperties("./images/close.svg", 8vw, 7vh);
   }
 
   .navUl {
@@ -430,10 +420,7 @@ li {
 
     li a,
     .btn {
-      font-size: 4rem;
-    }
-    .btn {
-      height: 9rem;
+      font-size: 6.5vw;
     }
   }
 
@@ -442,40 +429,40 @@ li {
   }
 
   .context {
-    h1 {
-      font-size: calc(2.3rem + 7vh);
-    }
-
     p {
-      font-size: 4rem;
+      font-size: 6.5vw;
     }
   }
 
-  .btns {
-    .btn {
-      font-size: 3.5rem;
-    }
+  // ##################### section-3 #####################
+
+  .para {
+    margin-bottom: 5rem;
   }
 }
 
 @media (min-width: 992px) {
+  .navbar-brand {
+    font-size: 7vw;
+  }
+
   .navUl {
-    width: 79%;
+    width: 80%;
     position: absolute;
     right: 0;
-    top: 18px;
+    top: 8px;
     background-color: transparent;
     box-shadow: none;
     li {
       width: 35%;
       a {
-        font-size: 2rem;
+        font-size: 3vw;
       }
     }
 
     .btn {
-      height: 6rem;
-      font-size: 2rem;
+      height: 7vw;
+      font-size: 2.5vw;
     }
     div {
       flex-direction: row;
@@ -518,4 +505,26 @@ li {
     background-color: white;
     border-color: white;
   }
+
+  // ################### footer ###################
+
+  .footer {
+    h1 {
+      font-size: 8vw;
+    }
+
+    h2 {
+      font-size: 5vw;
+    }
+
+    a {
+      font-size: 3vw;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
 }
