@@ -501,16 +501,20 @@ li {
     background-color: transparent;
     -webkit-box-shadow: none;
             box-shadow: none;
+    padding: 2.5rem 2rem;
   }
   .navUl li {
     width: 35%;
   }
   .navUl li a {
     font-size: 3vw;
+    color: white;
   }
   .navUl .btn {
     height: 7vw;
-    font-size: 2.5vw;
+    font-size: 2vw;
+    padding: 1rem 3rem;
+    margin-bottom: 0;
   }
   .navUl div {
     -webkit-box-orient: horizontal;
@@ -544,6 +548,23 @@ li {
   .signUp {
     background-color: white;
     border-color: white;
+  }
+  .btns .btn {
+    padding: 2rem 5rem;
+  }
+  .productList a,
+  .companyList a,
+  .connectList a {
+    color: black !important;
+  }
+  .footer .container {
+    margin: 0;
+  }
+  .footer .row {
+    width: 100vw;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
   .footer h1 {
     font-size: 8vw;

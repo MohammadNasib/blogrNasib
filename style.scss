@@ -453,16 +453,21 @@ li {
     top: 8px;
     background-color: transparent;
     box-shadow: none;
+    padding: 2.5rem 2rem;
+
     li {
       width: 35%;
       a {
         font-size: 3vw;
+        color: white;
       }
     }
 
     .btn {
       height: 7vw;
-      font-size: 2.5vw;
+      font-size: 2vw;
+      padding: 1rem 3rem;
+      margin-bottom: 0;
     }
     div {
       flex-direction: row;
@@ -506,9 +511,28 @@ li {
     border-color: white;
   }
 
-  // ################### footer ###################
+  .btns .btn {
+    padding: 2rem 5rem;
+  }
+
+  .productList,
+  .companyList,
+  .connectList {
+    a {
+      color: black !important;
+    }
+  }
+
+  //   // ################### footer ###################
 
   .footer {
+    .container {
+      margin: 0;
+    }
+    .row {
+      width: 100vw;
+      align-items: baseline;
+    }
     h1 {
       font-size: 8vw;
     }
