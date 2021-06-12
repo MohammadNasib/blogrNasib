@@ -33,7 +33,6 @@ li {
 }
 
 .homeSection {
-  height: 100vh;
   background-color: #ff856e;
   border-bottom-left-radius: 10rem;
   margin-bottom: 5rem;
@@ -123,7 +122,7 @@ li {
 .navUl .btn {
   font-size: 2.5rem;
   font-weight: bold;
-  padding: 1rem 3rem;
+  padding: 1rem 4rem;
   margin: auto;
   margin-bottom: 9px;
   color: #ff555d;
@@ -207,14 +206,13 @@ li {
       -ms-flex-direction: column !important;
           flex-direction: column !important;
   color: white;
-  height: 85%;
+  padding: 15vh 0 13vh 0;
 }
 
 .context p {
   font-size: 5.5vw;
   width: 75%;
   margin: auto;
-  margin-bottom: 2rem;
 }
 
 .btns .btn {
@@ -223,8 +221,8 @@ li {
   font-weight: 600;
   border: 1px solid;
   border-radius: 5rem;
-  margin: 1rem 1rem 2rem 1rem;
-  padding: 1rem 2rem;
+  margin: 0.5em;
+  padding: 0.3em 1em;
   cursor: pointer;
 }
 
@@ -250,7 +248,7 @@ li {
 .sec_2_img {
   width: 100%;
   height: 65vw;
-  background: url(./images/illustration-editor-mobile.svg) center/70vw no-repeat;
+  background: url("./images/illustration-editor-mobile.svg") center/65vw no-repeat;
 }
 
 .sec_2_para,
@@ -311,13 +309,14 @@ li {
   -webkit-box-direction: normal !important;
       -ms-flex-direction: column !important;
           flex-direction: column !important;
+  height: auto;
   color: white;
   background-position-y: -50vh;
   background-color: #2c2d3f;
   border-top-right-radius: 9rem;
   border-bottom-left-radius: 9rem;
   z-index: -1;
-  padding-top: 30vh;
+  padding: 30vh 0 5vh 0;
   margin-top: 25vh;
 }
 
@@ -395,9 +394,6 @@ li {
     -webkit-transition-delay: 0.3s;
             transition-delay: 0.3s;
   }
-  .btns .btn {
-    padding: 2rem 3rem;
-  }
   .navUl {
     width: 60%;
     border-radius: 2rem;
@@ -406,9 +402,6 @@ li {
   .navUl li a,
   .navUl .btn {
     font-size: 6vw;
-  }
-  .navUl .btn {
-    padding: 2rem 5rem;
   }
   .open {
     right: calc((100% - 60%) / 2);
@@ -430,6 +423,9 @@ li {
   }
   .heading_2 {
     font-size: 9vw;
+  }
+  .homeSection {
+    margin-bottom: 10rem;
   }
   .homeSection,
   .main {
@@ -470,18 +466,12 @@ li {
             transition-delay: 0.3s;
   }
   .navUl {
-    width: 50%;
     border-radius: 3rem;
     padding: 2.5rem;
   }
   .navUl li a,
-  .navUl .btn {
-    font-size: 6.5vw;
-  }
-  .open {
-    right: calc((100% - 50%) / 2);
-  }
-  .context p {
+  .navUl .btn,
+  .navUl .context p {
     font-size: 6.5vw;
   }
   .para {
@@ -490,14 +480,18 @@ li {
 }
 
 @media (min-width: 992px) {
+  .heading_1,
   .navbar-brand {
-    font-size: 7vw;
+    font-size: 7.5vw;
+  }
+  .heading_2 {
+    font-size: 6.5vw;
   }
   .navUl {
     width: 80%;
     position: absolute;
     right: 0;
-    top: 8px;
+    top: 20px;
     background-color: transparent;
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -511,9 +505,8 @@ li {
     color: white;
   }
   .navUl .btn {
-    height: 7vw;
     font-size: 2vw;
-    padding: 1rem 3rem;
+    padding: 0.5em 1em;
     margin-bottom: 0;
   }
   .navUl div {
@@ -550,12 +543,26 @@ li {
     border-color: white;
   }
   .btns .btn {
-    padding: 2rem 5rem;
+    font-size: 4rem;
+    padding: 0.3em 1em;
+  }
+  .context p {
+    font-size: 5vw;
   }
   .productList a,
   .companyList a,
   .connectList a {
     color: black !important;
+  }
+  .section_2,
+  .section_3,
+  .section_4 {
+    margin-bottom: 5rem;
+  }
+  .section_2 p,
+  .section_3 p,
+  .section_4 p {
+    font-size: 3.5vw;
   }
   .footer .container {
     margin: 0;

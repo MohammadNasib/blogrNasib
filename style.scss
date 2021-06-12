@@ -82,7 +82,6 @@ li {
 // ##################### Home Section #########################
 
 .homeSection {
-  height: 100vh;
   background-color: $color1;
   border-bottom-left-radius: 10rem;
   margin-bottom: 5rem;
@@ -142,7 +141,7 @@ li {
   .btn {
     font-size: 2.5rem;
     font-weight: bold;
-    padding: 1rem 3rem;
+    padding: 1rem 4rem;
     margin: auto;
     margin-bottom: 9px;
     color: $color2;
@@ -204,7 +203,7 @@ li {
 .homeContainer {
   @include flexProperties(column);
   color: white;
-  height: 85%;
+  padding: 15vh 0 13vh 0;
 }
 
 .context {
@@ -212,7 +211,6 @@ li {
     font-size: 5.5vw;
     width: 75%;
     margin: auto;
-    margin-bottom: 2rem;
   }
 }
 
@@ -223,8 +221,8 @@ li {
     font-weight: 600;
     border: 1px solid;
     border-radius: 5rem;
-    margin: 1rem 1rem 2rem 1rem;
-    padding: 1rem 2rem;
+    margin: 0.5em;
+    padding: 0.3em 1em;
     cursor: pointer;
   }
 
@@ -249,9 +247,7 @@ li {
 }
 
 .sec_2_img {
-  width: 100%;
-  height: 65vw;
-  background: url(./images/illustration-editor-mobile.svg) center/70vw no-repeat;
+  @include bgProperty("illustration-editor-mobile.svg", 100%, 65vw);
 }
 
 .sec_2_para,
@@ -271,13 +267,14 @@ li {
 .sec_3_para {
   @include bgProperty("bg-pattern-circles.svg", 100%, 100vh);
   @include flexProperties(column);
+  height: auto;
   color: white;
   background-position-y: -50vh;
   background-color: #2c2d3f;
   border-top-right-radius: 9rem;
   border-bottom-left-radius: 9rem;
   z-index: -1;
-  padding-top: 30vh;
+  padding: 30vh 0 5vh 0;
   margin-top: 25vh;
 }
 
@@ -321,7 +318,7 @@ li {
   }
 }
 
-// media queries
+// ################## media queries #############
 
 @media (min-width: 576px) {
   $navUlWidth: 60%;
@@ -345,10 +342,6 @@ li {
     @include iconProperties("./images/close.svg", 7vw, 7vh);
   }
 
-  .btns .btn {
-    padding: 2rem 3rem;
-  }
-
   .navUl {
     width: $navUlWidth;
     border-radius: 2rem;
@@ -357,9 +350,6 @@ li {
     li a,
     .btn {
       font-size: 6vw;
-    }
-    .btn {
-      padding: 2rem 5rem;
     }
   }
 
@@ -382,14 +372,16 @@ li {
 }
 
 @media (min-width: 768px) {
-  $navUlWidth: 50%;
-
   .heading_1 {
     font-size: 9.5vw;
   }
 
   .heading_2 {
     font-size: 9vw;
+  }
+
+  .homeSection {
+    margin-bottom: 10rem;
   }
 
   .homeSection,
@@ -414,22 +406,12 @@ li {
   }
 
   .navUl {
-    width: $navUlWidth;
     border-radius: 3rem;
     padding: 2.5rem;
 
     li a,
-    .btn {
-      font-size: 6.5vw;
-    }
-  }
-
-  .open {
-    right: calc((100% - #{$navUlWidth}) / 2);
-  }
-
-  .context {
-    p {
+    .btn,
+    .context p {
       font-size: 6.5vw;
     }
   }
@@ -442,15 +424,20 @@ li {
 }
 
 @media (min-width: 992px) {
+  .heading_1,
   .navbar-brand {
-    font-size: 7vw;
+    font-size: 7.5vw;
+  }
+
+  .heading_2 {
+    font-size: 6.5vw;
   }
 
   .navUl {
     width: 80%;
     position: absolute;
     right: 0;
-    top: 8px;
+    top: 20px;
     background-color: transparent;
     box-shadow: none;
     padding: 2.5rem 2rem;
@@ -464,9 +451,8 @@ li {
     }
 
     .btn {
-      height: 7vw;
       font-size: 2vw;
-      padding: 1rem 3rem;
+      padding: 0.5em 1em;
       margin-bottom: 0;
     }
     div {
@@ -512,7 +498,12 @@ li {
   }
 
   .btns .btn {
-    padding: 2rem 5rem;
+    font-size: 4rem;
+    padding: 0.3em 1em;
+  }
+
+  .context p {
+    font-size: 5vw;
   }
 
   .productList,
@@ -520,6 +511,17 @@ li {
   .connectList {
     a {
       color: black !important;
+    }
+  }
+
+  // ######### section-2 #############
+
+  .section_2,
+  .section_3,
+  .section_4 {
+    margin-bottom: 5rem;
+    p {
+      font-size: 3.5vw;
     }
   }
 
