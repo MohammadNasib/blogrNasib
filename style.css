@@ -565,10 +565,10 @@ li {
     font-size: 3.5vw;
   }
   .footer .container {
-    margin: 0;
+    margin: auto;
   }
   .footer .row {
-    width: 100vw;
+    width: 90vw;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
