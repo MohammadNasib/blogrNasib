@@ -551,24 +551,17 @@ li {
 @media (min-width: 1200px) {
   .heading_1,
   .navbar-brand {
-    font-size: 9vh;
+    font-size: 4vw;
   }
 
-  .homeSection {
-    height: 100vh;
-
-    .main {
-      height: 100%;
-    }
-
-    .navbar,
-    .homeContainer {
-      margin: 0 25vh;
-    }
+  .navbar,
+  .homeContainer {
+    margin: 0 14vw;
   }
 
   .navUl {
     padding: 0;
+    top: 1.5vw;
 
     li {
       width: 25%;
@@ -576,18 +569,21 @@ li {
 
     li a,
     .btn {
-      font-size: 4vh;
+      font-size: 1.8vw;
     }
   }
 
+  .nav-item ul {
+    top: 5vw;
+  }
+
   .homeContainer {
-    height: 85%;
     .context p {
-      font-size: 5vh;
+      font-size: 2.5vw;
     }
 
     .btn {
-      font-size: 4vh;
+      font-size: 1.9vw;
     }
   }
 }
