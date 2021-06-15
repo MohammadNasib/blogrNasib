@@ -88,7 +88,7 @@ li {
 }
 
 .main {
-  height: 100%;
+  // width: 100vw;
   background: url(./images/bg-pattern-intro.svg);
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -222,7 +222,7 @@ li {
     border: 1px solid;
     border-radius: 5rem;
     margin: 0.5em;
-    padding: 0.3em 1em;
+    padding: 0.5em 1em;
     cursor: pointer;
   }
 
@@ -499,7 +499,6 @@ li {
 
   .btns .btn {
     font-size: 4rem;
-    padding: 0.3em 1em;
   }
 
   .context p {
@@ -550,6 +549,47 @@ li {
 }
 
 @media (min-width: 1200px) {
+  .heading_1,
+  .navbar-brand {
+    font-size: 9vh;
+  }
+
+  .homeSection {
+    height: 100vh;
+
+    .main {
+      height: 100%;
+    }
+
+    .navbar,
+    .homeContainer {
+      margin: 0 25vh;
+    }
+  }
+
+  .navUl {
+    padding: 0;
+
+    li {
+      width: 25%;
+    }
+
+    li a,
+    .btn {
+      font-size: 4vh;
+    }
+  }
+
+  .homeContainer {
+    height: 85%;
+    .context p {
+      font-size: 5vh;
+    }
+
+    .btn {
+      font-size: 4vh;
+    }
+  }
 }
 
 @media (min-width: 1400px) {

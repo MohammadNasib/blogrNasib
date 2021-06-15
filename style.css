@@ -39,7 +39,6 @@ li {
 }
 
 .main {
-  height: 100%;
   background: url(./images/bg-pattern-intro.svg);
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -222,7 +221,7 @@ li {
   border: 1px solid;
   border-radius: 5rem;
   margin: 0.5em;
-  padding: 0.3em 1em;
+  padding: 0.5em 1em;
   cursor: pointer;
 }
 
@@ -544,7 +543,6 @@ li {
   }
   .btns .btn {
     font-size: 4rem;
-    padding: 0.3em 1em;
   }
   .context p {
     font-size: 5vw;
@@ -581,6 +579,42 @@ li {
   }
   .footer a {
     font-size: 3vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .heading_1,
+  .navbar-brand {
+    font-size: 9vh;
+  }
+  .homeSection {
+    height: 100vh;
+  }
+  .homeSection .main {
+    height: 100%;
+  }
+  .homeSection .navbar,
+  .homeSection .homeContainer {
+    margin: 0 25vh;
+  }
+  .navUl {
+    padding: 0;
+  }
+  .navUl li {
+    width: 25%;
+  }
+  .navUl li a,
+  .navUl .btn {
+    font-size: 4vh;
+  }
+  .homeContainer {
+    height: 85%;
+  }
+  .homeContainer .context p {
+    font-size: 5vh;
+  }
+  .homeContainer .btn {
+    font-size: 4vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
