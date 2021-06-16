@@ -257,27 +257,6 @@ li {
 
 // ##################### Section-3 #########################
 
-.sec_container {
-  @include bgProperty("illustration-phones.svg", 100%, 100%);
-  @include flexProperties(column);
-  background-position-y: 0;
-  background-size: 47vh;
-}
-
-.sec_3_para {
-  @include bgProperty("bg-pattern-circles.svg", 100%, 100vh);
-  @include flexProperties(column);
-  height: auto;
-  color: white;
-  background-position-y: -50vh;
-  background-color: #2c2d3f;
-  border-top-right-radius: 9rem;
-  border-bottom-left-radius: 9rem;
-  z-index: -1;
-  padding: 30vh 0 5vh 0;
-  margin-top: 25vh;
-}
-
 // ##################### Section-4 #########################
 
 .sec_4_img {
@@ -356,19 +335,6 @@ li {
   .open {
     right: calc((100% - #{$navUlWidth}) / 2);
   }
-
-  // ################# section 3 ###########
-
-  .sec_container {
-    background-size: 65vh;
-  }
-
-  .sec_3_para {
-    background-size: 135vh;
-    height: 100%;
-    padding-top: 35vh;
-    margin-top: 35vh;
-  }
 }
 
 @media (min-width: 768px) {
@@ -414,12 +380,6 @@ li {
     .context p {
       font-size: 6.5vw;
     }
-  }
-
-  // ##################### section-3 #####################
-
-  .para {
-    margin-bottom: 5rem;
   }
 }
 
@@ -528,32 +488,37 @@ li {
 
   .footer {
     .container {
-      margin: auto;
+      display: flex;
+      max-width: 90vw;
     }
     .row {
-      width: 90vw;
+      width: 100%;
       align-items: baseline;
     }
     h1 {
-      font-size: 8vw;
+      font-size: 6.5vw;
     }
 
     h2 {
-      font-size: 5vw;
+      font-size: 3.5vw;
     }
 
     a {
-      font-size: 3vw;
+      font-size: 2.5vw;
     }
   }
 }
 
 @media (min-width: 1200px) {
   .heading_1,
-  .navbar-brand {
+  .navbar-brand,
+  .footer h1 {
     font-size: 4vw;
   }
 
+  .homeSection {
+    margin-bottom: 5rem;
+  }
   .navbar,
   .homeContainer {
     margin: 0 14vw;
@@ -577,16 +542,59 @@ li {
     top: 5vw;
   }
 
-  .homeContainer {
-    .context p {
-      font-size: 2.5vw;
+  .context p,
+  .footer h2 {
+    font-size: 2.5vw;
+  }
+
+  .btn {
+    font-size: 1.9vw;
+  }
+
+  // ########## section-2 #################
+  .heading_2 {
+    font-size: 2.5vw;
+  }
+  .para {
+    width: 100%;
+    text-align: left;
+  }
+
+  .section_2 p,
+  .section_3 p,
+  .section_4 p,
+  .footer a {
+    font-size: 1.5vw;
+  }
+
+  .section_2,
+  .section_4 {
+    .container {
+      max-width: 81vw;
+      padding: 5rem 0 0 0;
+      margin: 0 8vw;
     }
 
-    .btn {
-      font-size: 1.9vw;
+    .row {
+      width: 100%;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .sec_2_img,
+  .sec_4_img {
+    width: 40vw;
+    height: 85vh;
+    background-size: 110%;
+  }
+
+  //  ########## section-4 ##########
+  .section_4 {
+    .row {
+      flex-direction: row;
     }
   }
 }
 
-@media (min-width: 1400px) {
-}
